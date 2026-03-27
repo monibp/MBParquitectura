@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRZC0P8XCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRZC0P8XCY');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRZC0P8XCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JRZC0P8XCY');
+</script>
+<title>MBP Arquitectura — Estudio de arquitectura en Ponteareas, Galicia</title>
+  <meta name="description" content="Estudio de arquitectura en Ponteareas, Galicia. Especializado en expedientes complejos, situaciones urbanísticas difíciles, obra nueva y rehabilitación. Servicio en Ponteareas, Porriño, Vigo, Mondariz, Salvaterra, Tui, Redondela y toda la provincia de Pontevedra y Ourense."/>
+  <meta name="keywords" content="estudio de arquitectura Ponteareas, arquitecta Ponteareas, arquitecto Ponteareas, arquitectura Ponteareas, arquitectura en Ponteareas, arquitecta en Pontevedra, estudio arquitectura Galicia, arquitecto Galicia, expedientes complejos arquitecto, expedientes urbanísticos, fuera de ordenación arquitecto Galicia, urbanismo Galicia, viabilidad urbanística, normativa urbanística Galicia, cambio de uso, licencias, arquitecto para licencias, tramitación licencias Galicia, rehabilitación, arquitecto para rehabilitación, rehabilitación vivienda Galicia, proyectos de arquitectura, obra nueva Pontevedra, arquitecto Vigo, arquitecto Porriño, arquitecto Mondariz, arquitecto Salvaterra, arquitecto Tui, consultoría arquitectónica, MBP Arquitectura"/>
+  <meta name="author" content="Mónica Boente Porto, arquitecta — MBP Arquitectura"/>
+  <meta property="og:title" content="MBP Arquitectura — Expedientes complejos y soluciones técnicas en Galicia"/>
+  <meta property="og:description" content="Estudio de arquitectura especializado en proyectos complejos, tramitaciones difíciles y soluciones urbanísticas a medida. Ponteareas, Galicia."/>
+  <meta property="og:type" content="website"/>
+  <meta name="robots" content="index, follow"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream: #f5f2ed;
+      --stone: #c8bfb0;
+      --dark: #1a1815;
+      --mid: #5c554e;
+      --accent: #8b2e10;
+      --white: #fafaf8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; } body { overflow-x: hidden; max-width: 100vw; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+    }
+
+
+    .hero-cta-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(12px, 1.3vw, 13px);
+      font-weight: 500;
+      font-style: normal;
+      color: var(--dark);
+      text-align: center;
+      max-width: 90%;
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+      margin-top: 32px;
+    }
+    .hero-question {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 400;
+      font-style: normal;
+      color: var(--dark);
+      text-align: center;
+      max-width: 90%;
+      line-height: 1.4;
+      margin-bottom: 32px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .hero-location {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(200,191,176,0.92);
+      margin-top: 16px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .hero-location-icon {
+      width: 10px;
+      height: auto;
+      flex-shrink: 0;
+      color: rgba(200,191,176,0.92);
+    }
+    .hero-cta-secondary {
+      background: transparent;
+      color: var(--accent);
+      border-bottom-color: transparent;
+    }
+    .hero-cta-secondary:hover {
+      background: transparent;
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+
+    /* ── CARRUSEL ── */
+    .hero-carousel {
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      margin-top: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+    .hero-carousel-track {
+      display: flex;
+      gap: 12px;
+      height: 100%;
+      animation: carousel-scroll 80s linear infinite;
+      width: max-content;
+    }
+    .hero-carousel-track img {
+      height: 150px;
+      width: auto;
+      object-fit: cover;
+      flex-shrink: 0;
+      pointer-events: none;
+      filter: grayscale(20%);
+    }
+    @keyframes carousel-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 60px;
+      background: rgba(245,242,237,0.85);
+      border-bottom: 0.5px solid rgba(139,46,16,0.25);
+    }
+    nav.scrolled {
+      background: rgba(220,214,205,0.98) !important;
+      backdrop-filter: blur(8px);
+      padding: 10px 60px;
+      border-bottom: 1px solid var(--dark);
+    }
+    .logo-img { display: flex; align-items: center; text-decoration: none; cursor: pointer; }
+    .logo-image { height: 52px; width: auto; transition: opacity 0.3s; }
+    .logo-img:hover .logo-image { opacity: 0.75; }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+    .nav-links { display: flex; gap: 48px; list-style: none; }
+    .nav-links a {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--dark);
+      position: relative;
+      padding-bottom: 4px;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+
+    .lang-switcher {
+      display: flex;
+      gap: 2px;
+    }
+    .lang-btn-nav {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 9px;
+      border: 1px solid transparent;
+      background: none;
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn-nav.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .lang-btn-nav:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    #hero {
+      height: 100vh;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      padding: 0 60px;
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, transparent 55%, rgba(139,46,16,0.06) 100%);
+    }
+    .hero-grid-lines {
+      position: absolute;
+      inset: -100%; width: 300%; height: 300%;
+      background-image:
+        linear-gradient(to right, rgba(139,46,16,0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(139,46,16,0.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      transform: rotate(45deg);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 640px; text-align: center;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .hero-logo-large {
+      margin-bottom: 36px; opacity: 0;
+      animation: fadeUp 0.9s 0.3s forwards;
+    }
+    .hero-logo-large img { height: 130px; width: auto; }
+    .hero-subtitle {
+      font-size: 13px; line-height: 1.9; color: var(--mid);
+      max-width: 520px; text-align: center; opacity: 0;
+      animation: fadeUp 0.9s 0.6s forwards;
+    }
+    .hero-cta {
+      margin-top: 40px; display: inline-block;
+      font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--dark); text-decoration: none;
+      border-bottom: 1px solid transparent; padding-bottom: 6px;
+      opacity: 0; animation: fadeUp 0.9s 0.9s forwards; transition: color 0.3s, border-color 0.3s;
+    }
+    .hero-cta:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 120px 60px; }
+    .section-label {
+      font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 4vw, 52px); font-weight: 300;
+      line-height: 1.1; color: var(--dark); margin-bottom: 48px;
+    }
+    .section-title em { font-style: italic; }
+    .divider { width: 40px; height: 1px; background: var(--accent); margin: 24px 0 48px; }
+
+    /* ── ESTUDIO ── */
+    #estudio {
+      background: var(--white);
+      display: grid; grid-template-columns: 1fr;
+      max-width: 720px; margin: 0 auto;
+    }
+    .estudio-text p { font-size: 14px; line-height: 2; color: var(--mid); margin-bottom: 20px; }
+    .nicho-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .nicho-item { border-top: 1px solid var(--stone); padding-top: 20px; }
+    .nicho-item h4 {
+      font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 400;
+      margin-bottom: 8px; color: var(--dark);
+    }
+    .nicho-item p { font-size: 12px; color: var(--mid); line-height: 1.7; margin: 0; }
+    .nicho-icon { font-size: 18px; margin-bottom: 10px; display: block; color: var(--accent); opacity: 0.6; }
+    .estudio-placeholder {
+      width: 100%; aspect-ratio: 3/4;
+      background: var(--cream); display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: var(--stone); font-size: 12px; letter-spacing: 0.1em;
+      border: 1px solid var(--stone); position: relative; overflow: hidden;
+    }
+    .estudio-placeholder::before {
+      content: ''; position: absolute;
+      top: 20px; left: 20px; right: 20px; bottom: 20px;
+      border: 1px solid rgba(139,46,16,0.15);
+    }
+
+    /* ── PROYECTOS ── */
+    #proyectos { background: var(--cream); }
+    .proyectos-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 60px;
+    }
+    .filter-tabs { display: flex; gap: 20px; flex-wrap: wrap; }
+    .filter-tab {
+      font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--mid); cursor: pointer; border: none; background: none;
+      font-family: 'Montserrat', sans-serif; padding-bottom: 4px;
+      border-bottom: 1px solid transparent; transition: all 0.3s;
+    }
+    .filter-tab.active, .filter-tab:hover { color: var(--dark); border-bottom-color: var(--accent); }
+
+
+    /* Project grid */
+    .proyectos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .proyecto-card {
+      position: relative; overflow: hidden; cursor: pointer;
+      background: var(--stone);
+    }
+    .proyecto-card:first-child { grid-column: span 2; }
+
+    .proyecto-img {
+      width: 100%; aspect-ratio: 16/10;
+      object-fit: cover; display: block;
+      transition: transform 0.5s ease;
+    }
+    .proyecto-card:first-child .proyecto-img { aspect-ratio: 16/9; }
+    .proyecto-card:hover .proyecto-img { transform: scale(1.04); }
+
+    .proyecto-placeholder {
+      width: 100%; aspect-ratio: 16/10;
+      background: linear-gradient(135deg, var(--stone) 0%, var(--cream) 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .proyecto-card:first-child .proyecto-placeholder { aspect-ratio: 16/9; }
+    .proyecto-placeholder-inner {
+      display: flex; flex-direction: column; align-items: center;
+      color: rgba(26,24,21,0.25); font-size: 11px;
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+    .proyecto-placeholder svg { width: 36px; height: 36px; margin-bottom: 10px; opacity: 0.3; }
+
+    .proyecto-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,24,21,0.88) 0%, transparent 55%);
+      opacity: 0; transition: opacity 0.4s ease;
+      display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;
+    }
+    .proyecto-card:hover .proyecto-overlay { opacity: 1; }
+    .proyecto-info h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 22px;
+      font-weight: 400; color: var(--white); margin-bottom: 4px;
+    }
+    .proyecto-info .proyecto-tag {
+      font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--dark); font-weight: 700; margin-bottom: 10px; display: block;
+    }
+    .proyecto-info .proyecto-desc {
+      font-size: 12px; color: rgba(245,242,237,0.7);
+      line-height: 1.6; display: none;
+    }
+    .proyecto-card:hover .proyecto-desc { display: block; }
+    .proyecto-link {
+      display: inline-block; margin-top: 12px;
+      font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--stone); text-decoration: none;
+      border-bottom: 1px solid rgba(200,191,176,0.4); padding-bottom: 3px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .proyecto-link:hover { color: var(--white); border-color: var(--white); }
+
+    .proyectos-note {
+      margin-top: 48px; padding: 32px;
+      border: 1px solid var(--stone); background: var(--white);
+      font-size: 13px; color: var(--mid); line-height: 1.8; font-style: italic;
+    }
+
+    /* ── CONTACTO ── */
+    #contacto { background: #3a322c; color: var(--cream); }
+    #contacto .section-label { color: var(--stone); }
+    #contacto .section-title { color: var(--white); }
+    .contacto-nota {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(16px, 1.8vw, 22px);
+      letter-spacing: 0.04em;
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 48px;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .contacto-layout {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; margin-top: 60px;
+    }
+    .contacto-info { display: flex; flex-direction: column; gap: 40px; }
+    .contacto-item h4 {
+      font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--stone); margin-bottom: 12px;
+    }
+    .contacto-item p, .contacto-item a {
+      font-family: 'Cormorant Garamond', serif; font-size: 20px;
+      font-weight: 300; color: var(--cream); text-decoration: none; line-height: 1.4;
+    }
+    .contacto-item a:hover { color: #c8856a; }
+    .contacto-form { display: flex; flex-direction: column; gap: 24px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label {
+      font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--stone);
+    }
+    .form-group input, .form-group textarea {
+      background: transparent; border: none;
+      border-bottom: 1px solid rgba(200,191,176,0.25);
+      color: var(--cream); font-family: 'Montserrat', sans-serif;
+      font-size: 14px; font-weight: 300; padding: 12px 0;
+      outline: none; transition: border-color 0.3s; letter-spacing: 0.03em;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-bottom-color: #c8856a; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(200,191,176,0.25); }
+    .form-group textarea { resize: none; height: 100px; }
+    .btn-submit {
+      align-self: flex-start; margin-top: 16px;
+      font-family: 'Montserrat', sans-serif; font-size: 11px;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--cream); background: transparent;
+      border: 1px solid rgba(200,191,176,0.4); padding: 14px 36px;
+      cursor: pointer; transition: all 0.3s;
+    }
+    .btn-submit:hover { background: rgba(200,191,176,0.15); border-color: var(--cream); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111009; padding: 24px 60px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(200,191,176,0.1); gap: 24px;
+    }
+    .footer-logo { display: flex; align-items: center; flex-shrink: 0; }
+    .footer-logo-img { height: 26px; width: auto; filter: grayscale(1) brightness(0.5); }
+    .footer-legal { display: flex; gap: 28px; align-items: center; }
+    .footer-legal a {
+      font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(200,191,176,0.4); text-decoration: none; transition: color 0.3s; white-space: nowrap;
+    }
+    .footer-legal a:hover { color: var(--stone); }
+    .footer-copy {
+      font-size: 10px; letter-spacing: 0.08em;
+      color: rgba(200,191,176,0.3); white-space: nowrap;
+    }
+
+    /* ── MODALS ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(26,24,21,0.85); z-index: 300;
+      align-items: center; justify-content: center;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal {
+      background: var(--white); max-width: 640px; width: 90%;
+      max-height: 80vh; overflow-y: auto; padding: 60px; position: relative;
+    }
+    .modal h2 {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      font-weight: 400; margin-bottom: 32px; color: var(--dark);
+    }
+    .modal p { font-size: 13px; line-height: 1.9; color: var(--mid); margin-bottom: 16px; }
+    .modal-close {
+      position: absolute; top: 24px; right: 24px;
+      background: none; border: none; font-size: 24px; cursor: pointer; color: var(--mid);
+    }
+    .modal-close:hover { color: var(--dark); }
+
+    /* ── PROJECT MODAL ── */
+    .project-modal {
+      background: var(--white); max-width: 860px; width: 95%;
+      max-height: 90vh; overflow-y: auto; position: relative; margin: 16px;
+    }
+    .project-modal-img {
+      width: 100%; max-height: 420px; object-fit: cover; display: block;
+    }
+    .project-modal-body { padding: 32px; }
+    .project-modal-tag {
+      font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px; display: block;
+    }
+    .project-modal-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 36px;
+      font-weight: 300; color: var(--dark); margin-bottom: 32px; line-height: 1.1;
+    }
+    .project-ficha {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border-top: 1px solid var(--stone); margin-bottom: 40px;
+    }
+    .ficha-item {
+      padding: 20px 0; border-bottom: 1px solid var(--stone);
+    }
+    .ficha-item:nth-child(odd) { padding-right: 32px; border-right: 1px solid var(--stone); }
+    .ficha-item:nth-child(even) { padding-left: 32px; }
+    .ficha-label {
+      font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 6px;
+    }
+    .ficha-value { font-size: 13px; color: var(--dark); line-height: 1.5; }
+    .project-modal-section { margin-bottom: 28px; }
+    .project-modal-section h4 {
+      font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--mid); margin-bottom: 10px;
+    }
+    .project-modal-section p {
+      font-size: 14px; line-height: 1.85; color: var(--mid);
+    }
+    .project-modal-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--accent); text-decoration: none;
+      border-bottom: 1px solid var(--accent); padding-bottom: 4px;
+      transition: opacity 0.3s;
+    }
+    .project-modal-link:hover { opacity: 0.7; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      /* NAVBAR — todo en una línea compacta */
+      nav { padding: 6px 12px; flex-wrap: nowrap; }
+      nav.scrolled { padding: 6px 12px; }
+      .logo-image { height: 22px !important; width: auto; max-width: 88px; }
+      .footer-logo-img { height: 20px !important; }
+      .nav-right { gap: 8px; flex-shrink: 0; }
+      .nav-links { gap: 8px; }
+      .nav-links a { font-size: 8px; letter-spacing: 0.12em; }
+      .lang-btn-nav { font-size: 8px; padding: 2px 3px; }
+      .lang-switcher { gap: 2px; }
+
+      /* HERO — centrado verticalmente, sin espacio vacío arriba */
+      #hero {
+        padding: 0;
+        height: 100svh;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-content {
+        padding: 52px 20px 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .hero-logo-large { margin-bottom: 10px; }
+      .hero-logo-large img { height: 80px; }
+      .hero-question {
+        font-size: clamp(14px, 4vw, 19px);
+        max-width: 100%;
+        white-space: normal;
+        margin-bottom: 10px;
+      }
+      .hero-subtitle { font-size: 11px; max-width: 100%; line-height: 1.6; }
+      .hero-cta-text { font-size: 11px; max-width: 100%; margin-top: 10px; line-height: 1.5; }
+      .hero-ctas { gap: 20px; flex-direction: row; align-items: center; margin-top: 14px; }
+      .hero-cta { font-size: 9px; letter-spacing: 0.18em; margin-top: 0; }
+
+      /* CARRUSEL — posición absoluta respecto al hero */
+      .hero-carousel { height: 100px; position: absolute; bottom: 0; left: 0; width: 100%; }
+      .hero-carousel-track img { height: 100px; }
+
+      /* RESTO */
+      section { padding: 60px 20px; }
+      #estudio { grid-template-columns: 1fr; gap: 40px; }
+      .nicho-grid { grid-template-columns: 1fr; }
+      .contacto-nota { font-size: clamp(14px, 4vw, 17px); margin-bottom: 32px; }
+      .contacto-layout { grid-template-columns: 1fr; gap: 40px; }
+      .proyectos-grid { grid-template-columns: 1fr; }
+      .proyecto-card:first-child { grid-column: span 1; }
+      footer { flex-direction: column; align-items: center; text-align: center; padding: 20px 16px; gap: 14px; }
+      .footer-legal { flex-wrap: wrap; justify-content: center; gap: 16px; }
+      .footer-legal a { font-size: 9px; }
+      .footer-copy { font-size: 9px; }
+      .proyectos-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .project-ficha { grid-template-columns: 1fr; }
+      .ficha-item:nth-child(odd) { padding-right: 0; border-right: none; }
+      .ficha-item:nth-child(even) { padding-left: 0; }
+      .project-modal { width: 100%; max-height: 95vh; margin: 0; border-radius: 0; }
+      .project-modal-body { padding: 20px; }
+      .project-modal-img { max-height: 240px; }
+      .project-modal-title { font-size: 22px !important; }
+      .modal { width: 95%; padding: 32px 20px; max-height: 90vh; }
+    }
+  </style>
+<script>
+  function openModal(id) {
+    var el = document.getElementById('modal-' + id);
+    if (el) { el.classList.add('active'); document.body.style.overflow = 'hidden'; }
+  }
+  function closeModal(id) {
+    var el = document.getElementById('modal-' + id);
+    if (el) { el.classList.remove('active'); document.body.style.overflow = ''; }
+  }
+  function openProject(id) { openModal(id); }
+
+  window._texts = {
+    es: {
+      'hero-question': 'Si tienes un proyecto que requiere una solución <em>singular</em>, este es tu sitio.', 'hero-subtitle': 'Estudio de arquitectura especializado en proyectos y situaciones urbanísticas complejas. Desarrollo de soluciones técnicas a medida y experiencia en tramitaciones administrativas con elevada carga de normativa técnica. Consultoría arquitectónica.', 'hero-cta-text': '¿Tu proyecto tiene un problema técnico, urbanístico o normativo sin solución aparente? Lo analizo y propongo opciones.',
+      'hero-cta': 'Ver proyectos', 'hero-cta2': 'Cuéntame tu proyecto →', 'link-coag': 'Colegiada COAG',
+      'label-estudio': 'Estudio', 'title-estudio': 'Arquitectura que analiza,<br/>diseña y <em>resuelve</em>',
+      'estudio-p1': 'Como arquitecta, tengo la convicción de que el diseño de los espacios debe cumplir los requisitos de cada cliente y, al mismo tiempo, resolver circunstancias técnicas, urbanísticas y con normativas que condicionan cada proyecto.',
+      'estudio-p2': 'Trabajo desde Galicia con una mirada técnica, rigurosa y orientada a resultados. Cada encargo es un problema que merece una solución a medida.',
+      'n1-title': 'Expedientes complejos', 'n1-text': 'Resolución de situaciones urbanísticas difíciles, fuera de ordenación y procedimientos con alta carga normativa.',
+      'n2-title': 'Arquitectura y sus leyes', 'n2-text': 'La normativa lejos de ser un límite, preserva principios arquitectónicos y territoriales. Interpreto ese marco y planteo proyectos atractivos, viables y respetuosos con su entorno.',
+      'n3-title': 'Soluciones a medida', 'n3-text': 'Cada proyecto parte de un análisis técnico riguroso que deriva en una solución específica.',
+      'n4-title': 'Consultoría', 'n4-text': 'Asesoramiento para promotores, particulares y despachos que necesitan criterio técnico especializado.',
+      'label-proyectos': 'Proyectos', 'title-proyectos': 'Obra<br/><em>seleccionada</em>',
+      'tab-expediente': 'Expediente complejo', 'tab-todos': 'Todos', 'tab-obra-nueva': 'Obra nueva', 'tab-rehabilitacion': 'Rehabilitación', 'tab-otros': 'Otros',
+      'proyectos-note': 'Los proyectos se seguirán incorporando con documentación fotográfica y de proceso.',
+      'p1-tag': 'Expediente complejo · Rehabilitación · 2024',
+      'p1-title': 'Rehabilitación y ampliación de vivienda tradicional',
+      'p1-desc': 'Ampliación en área de afección de carretera provincial. Resolución mediante recurso a la Xunta Consultiva.',
+      'p1-link': 'Ver ficha completa →',
+      'label-contacto': 'Contacto', 'title-contacto': 'Hablemos de<br/><em>tu proyecto</em>', 'contacto-nota': 'Cada proyecto recibe un presupuesto personalizado tras una primera consulta sin compromiso.',
+      'ct-email-label': 'Correo', 'ct-tel-label': 'Teléfono', 'ct-loc-label': 'Ubicación',
+      'form-nombre': 'Nombre', 'form-email': 'Correo electrónico', 'form-mensaje': 'Mensaje',
+      'input-nombre-ph': 'Tu nombre', 'input-email-ph': 'tu@correo.com', 'form-textarea-ph': 'Cuéntame tu proyecto...',
+      'form-btn': 'Enviar mensaje',
+      'nav-estudio': 'Estudio', 'nav-proyectos': 'Proyectos', 'nav-contacto': 'Contacto',
+      'footer-copy': '© 2025 MBP Arquitectura. Todos los derechos reservados.',
+      'pm1-tag': 'Expediente complejo · Rehabilitación',
+      'pm1-title': 'Rehabilitación y ampliación<br/>de vivienda tradicional',
+      'fl-encargo': 'Encargo', 'fv-encargo': 'Rehabilitación y ampliación de vivienda tradicional',
+      'fl-ubicacion': 'Ubicación', 'fv-ubicacion': 'Ponteareas, Pontevedra, Galicia',
+      'fl-resultado': 'Resultado', 'fv-resultado': 'Licencia concedida',
+      'fl-tipo': 'Tipo', 'fv-tipo': 'Expediente complejo · Rehabilitación',
+      'pm1-h-problema': 'El problema', 'pm1-problema': 'La vivienda se encontraba frente a una carretera de la Deputación de Pontevedra. La Deputación sostenía que la ampliación debía ejecutarse en un volumen independiente, al estar la edificación dentro del área de afección de la línea límite de edificación.',
+      'pm1-h-analisis': 'El análisis', 'pm1-analisis': 'Este criterio contradecía la legislación vigente, que establece de forma clara que una ampliación que respeta el retranqueo puede ejecutarse adosada a la edificación existente tradicional, sin necesidad de constituir un volumen independiente.',
+      'pm1-h-solucion': 'La solución', 'pm1-solucion': 'Se solicitó al COAG la interposición de un recurso ante la Xunta Consultiva, que a su vez requirió a AXI (Agencia Gallega de Infraestructuras) un informe sobre el criterio aplicable. La resolución emitida avaló la interpretación correcta de la normativa.',
+      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →', 'link-aviso': 'Aviso legal', 'link-privacidad': 'Política de privacidad', 'modal-aviso-title': 'Aviso Legal', 'modal-privacidad-title': 'Política de Privacidad',
+      'p2-tag': 'Otros · 2024', 'p2-title': 'Implantación de uso residencial en edificio comunitario', 'p2-desc': 'Determinar clasificación como edificio comunitario. Resolución mediante alegación.', 'p2-link': 'Ver ficha completa →',
+      'p3-tag': 'Expediente complejo · Obra nueva · 2021', 'p3-title': 'Vivienda unifamiliar con condicionantes hidráulicos', 'p3-desc': 'Parcela afectada por un regato. Necesario cumplir con los requisitos de zona de inundación.', 'p3-link': 'Ver ficha completa →',
+      'p4-tag': 'Rehabilitación · 2025', 'p4-title': 'Rehabilitación y ampliación de vivienda unifamiliar', 'p4-desc': 'Rehabilitación atendiendo al correcto diálogo con lo existente.', 'p4-link': 'Ver ficha completa →',
+      'p5-tag': 'Obra nueva · 2025', 'p5-title': 'Construcción de vivienda unifamiliar', 'p5-desc': 'Construcción de vivienda moderna alargada.', 'p5-link': 'Ver ficha completa →',
+    },
+    gl: {
+      'hero-question': 'Se tes un proxecto que require unha solución <em>singular</em>, este é o teu lugar.', 'hero-subtitle': 'Estudio de arquitectura especializado en proxectos e situacións urbanísticas complexas. Desenvolvemento de solucións técnicas a medida e experiencia en tramitacións administrativas con elevada carga de normativa técnica. Consultoría arquitectónica.', 'hero-cta-text': '¿O teu proxecto ten un problema técnico, urbanístico ou normativo sen solución aparente? Analízoo e propoño opcións.',
+      'hero-cta': 'Ver proxectos', 'hero-cta2': 'Cóntame o teu proxecto →', 'link-coag': 'Colexiada COAG',
+      'label-estudio': 'Estudio', 'title-estudio': 'Arquitectura que analiza,<br/>deseña e <em>resolve</em>',
+      'estudio-p1': 'Como arquitecta, teño a convicción de que o deseño dos espazos debe cumprir os requisitos de cada cliente e, ao mesmo tempo, resolver circunstancias técnicas, urbanísticas e con normativas que condicionan cada proxecto.',
+      'estudio-p2': 'Traballo desde Galicia cunha mirada técnica, rigorosa e orientada a resultados. Cada encargo é un problema que merece unha solución a medida.',
+      'n1-title': 'Expedientes complexos', 'n1-text': 'Resolución de situacións urbanísticas difíciles, fóra de ordenación e procedementos con alta carga normativa.',
+      'n2-title': 'Arquitectura e as súas leis', 'n2-text': 'A normativa lonxe de ser un límite, preserva principios arquitectónicos e territoriais. Interpreto ese marco e propoño proxectos atractivos, viables e respectuosos co seu entorno.',
+      'n3-title': 'Solucións a medida', 'n3-text': 'Cada proxecto parte dun análise técnico rigoroso que deriva nunha solución específica.',
+      'n4-title': 'Consultoría', 'n4-text': 'Asesoramento para promotores, particulares e despachos que necesitan criterio técnico especializado.',
+      'label-proyectos': 'Proxectos', 'title-proyectos': 'Obra<br/><em>seleccionada</em>',
+      'tab-expediente': 'Expediente complexo', 'tab-todos': 'Todos', 'tab-obra-nueva': 'Obra nova', 'tab-rehabilitacion': 'Rehabilitación', 'tab-otros': 'Outros',
+      'proyectos-note': 'Os proxectos seguirán incorporándose con documentación fotográfica e de proceso.',
+      'p1-tag': 'Expediente complexo · Rehabilitación · 2024',
+      'p1-title': 'Rehabilitación e ampliación de vivenda tradicional',
+      'p1-desc': 'Ampliación en área de afección de estrada provincial. Resolución mediante recurso á Xunta Consultiva.',
+      'p1-link': 'Ver ficha completa →',
+      'label-contacto': 'Contacto', 'title-contacto': 'Falemos do<br/><em>teu proxecto</em>', 'contacto-nota': 'Cada proxecto recibe un orzamento personalizado tras unha primeira consulta sen compromiso.',
+      'ct-email-label': 'Correo', 'ct-tel-label': 'Teléfono', 'ct-loc-label': 'Localización',
+      'form-nombre': 'Nome', 'form-email': 'Correo electrónico', 'form-mensaje': 'Mensaxe',
+      'input-nombre-ph': 'O teu nome', 'input-email-ph': 'o.teu@correo.com', 'form-textarea-ph': 'Cóntame o teu proxecto...',
+      'form-btn': 'Enviar mensaxe',
+      'nav-estudio': 'Estudio', 'nav-proyectos': 'Proxectos', 'nav-contacto': 'Contacto',
+      'footer-copy': '© 2025 MBP Arquitectura. Todos os dereitos reservados.',
+      'pm1-tag': 'Expediente complexo · Rehabilitación',
+      'pm1-title': 'Rehabilitación e ampliación<br/>de vivenda tradicional',
+      'fl-encargo': 'Encargo', 'fv-encargo': 'Rehabilitación e ampliación de vivenda tradicional',
+      'fl-ubicacion': 'Localización', 'fv-ubicacion': 'Ponteareas, Pontevedra, Galicia',
+      'fl-resultado': 'Resultado', 'fv-resultado': 'Licenza concedida',
+      'fl-tipo': 'Tipo', 'fv-tipo': 'Expediente complexo · Rehabilitación',
+      'pm1-h-problema': 'O problema', 'pm1-problema': 'A vivenda atopábase fronte a unha estrada da Deputación de Pontevedra. A Deputación sostiña que a ampliación debía executarse nun volume independente, ao estar a edificación dentro da área de afección da liña límite de edificación.',
+      'pm1-h-analisis': 'A análise', 'pm1-analisis': 'Este criterio contradecía a lexislación vixente, que establece de forma clara que unha ampliación que respecta o retranqueo pode executarse adosada á edificación existente, sen necesidade de constituír un volume independente.',
+      'pm1-h-solucion': 'A solución', 'pm1-solucion': 'Solicitouse ao COAG a interposición dun recurso ante a Xunta Consultiva, que á súa vez requiriu a AXI unha aclaración sobre o criterio aplicable. A resolución emitida avalou a interpretación correcta da normativa.',
+      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →', 'link-aviso': 'Aviso legal', 'link-privacidad': 'Política de privacidade', 'modal-aviso-title': 'Aviso Legal', 'modal-privacidad-title': 'Política de Privacidade', 'modal-aviso-body': '<p><strong>Titular:</strong> Mónica Boente Porto, arquitecta.</p><p><strong>Domicilio:</strong> Ponteareas, Galicia, España.</p><p><strong>Correo:</strong> boente.porto.monica@gmail.com</p><p>O acceso e uso deste sitio web implica a aceptación das presentes condicións. O contido —textos, imaxes, renders e planos— é propiedade de MBP Arquitectura e está protexido pola lexislación de propiedade intelectual vixente.</p><p>MBP Arquitectura non se responsabiliza dos danos derivados do uso incorrecto do sitio web.</p>', 'modal-privacidad-body': '<p>De acordo co RXPD, os datos persoais facilitados a través do formulario de contacto serán tratados por MBP Arquitectura coa finalidade de atender a túa consulta. Non serán cedidos a terceiros.</p><p>Podes exercer os teus dereitos escribindo a boente.porto.monica@gmail.com. Este sitio non utiliza cookies de terceiros nin sistemas de seguimento.</p>',
+      'p2-tag': 'Outros · 2024', 'p2-title': 'Implantación de uso residencial en edificio comunitario', 'p2-desc': 'Determinar a clasificación como edificio comunitario. Resolución mediante alegación.', 'p2-link': 'Ver ficha completa →',
+      'p3-tag': 'Expediente complexo · Obra nova · 2021', 'p3-title': 'Vivenda unifamiliar con condicionantes hidráulicos', 'p3-desc': 'Parcela afectada por un regato. Necesario cumprir cos requisitos de zona de inundación.', 'p3-link': 'Ver ficha completa →',
+      'p4-tag': 'Rehabilitación · 2025', 'p4-title': 'Rehabilitación e ampliación de vivenda unifamiliar', 'p4-desc': 'Rehabilitación atendendo ao correcto diálogo co existente.', 'p4-link': 'Ver ficha completa →',
+      'p5-tag': 'Obra nova · 2025', 'p5-title': 'Vivenda de nova planta lineal adaptada ao terreo', 'p5-desc': 'Vivenda de nova planta con xeometría lineal adaptada á topografía do terreo.', 'p5-link': 'Ver ficha completa →',
+    },
+    en: {
+      'hero-question': 'If your project requires a <em>singular</em> solution, this is your place.', 'hero-subtitle': 'Architecture studio specialised in complex projects and urban planning situations. Development of bespoke technical solutions and experience in administrative proceedings with high regulatory burden. Architectural consultancy.', 'hero-cta-text': 'Does your project have a technical, planning or regulatory problem with no obvious solution? MBP Arquitectura analyses it and proposes options.',
+      'hero-cta': 'View projects', 'hero-cta2': 'Tell me about your project →', 'link-coag': 'COAG registered',
+      'label-estudio': 'Studio', 'title-estudio': 'Architecture that analyses,<br/>designs and <em>resolves</em>',
+      'estudio-p1': 'MBP Arquitectura believes that spatial design must meet each client\'s requirements while simultaneously resolving the technical, urban planning and regulatory circumstances that shape every project.',
+      'estudio-p2': 'I work from Galicia with a technical, rigorous and results-oriented approach. Every commission is a problem that deserves a bespoke solution.',
+      'n1-title': 'Complex cases', 'n1-text': 'Resolution of difficult urban planning situations, non-conforming uses and high-complexity regulatory proceedings.',
+      'n2-title': 'Architecture and its laws', 'n2-text': 'Regulation, far from being a constraint, preserves architectural and territorial principles. I interpret that framework and propose attractive, viable projects that respect their surroundings.',
+      'n3-title': 'Bespoke solutions', 'n3-text': 'Every project begins with rigorous technical analysis, leading to a specific, non-standardised solution.',
+      'n4-title': 'Consultancy', 'n4-text': 'Advisory services for developers, private clients and firms requiring specialist technical expertise.',
+      'label-proyectos': 'Projects', 'title-proyectos': 'Selected<br/><em>work</em>',
+      'tab-expediente': 'Complex case', 'tab-todos': 'All', 'tab-obra-nueva': 'New build', 'tab-rehabilitacion': 'Renovation', 'tab-otros': 'Other',
+      'proyectos-note': 'Projects will continue to be added with photographic and process documentation.',
+      'p1-tag': 'Complex case · Residential · 2024',
+      'p1-title': 'Renovation and extension of traditional dwelling',
+      'p1-desc': 'Extension within the setback zone of a provincial road. Resolved through appeal to the Xunta Consultiva.',
+      'p1-link': 'View full case →',
+      'label-contacto': 'Contact', 'title-contacto': 'Let\'s talk about<br/><em>your project</em>', 'contacto-nota': 'Every project receives a personalised quote after a first no-obligation consultation.',
+      'ct-email-label': 'Email', 'ct-tel-label': 'Phone', 'ct-loc-label': 'Location',
+      'form-nombre': 'Name', 'form-email': 'Email address', 'form-mensaje': 'Message',
+      'input-nombre-ph': 'Your name', 'input-email-ph': 'your@email.com', 'form-textarea-ph': 'Tell me about your project...',
+      'form-btn': 'Send message',
+      'nav-estudio': 'Studio', 'nav-proyectos': 'Projects', 'nav-contacto': 'Contact',
+      'footer-copy': '© 2025 MBP Arquitectura. All rights reserved.',
+      'pm1-tag': 'Complex case · Residential',
+      'pm1-title': 'Renovation and extension<br/>of traditional dwelling',
+      'fl-encargo': 'Brief', 'fv-encargo': 'Renovation and extension of traditional dwelling',
+      'fl-ubicacion': 'Location', 'fv-ubicacion': 'Ponteareas, Pontevedra, Galicia',
+      'fl-resultado': 'Outcome', 'fv-resultado': 'Licence granted',
+      'fl-tipo': 'Type', 'fv-tipo': 'Complex case · Residential',
+      'pm1-h-problema': 'The problem', 'pm1-problema': 'The dwelling fronted a road managed by the Deputación de Pontevedra. The authority maintained that any extension had to be built as an independent volume, as the building fell within the setback protection zone of the building limit line.',
+      'pm1-h-analisis': 'The analysis', 'pm1-analisis': 'This position contradicted current legislation, which clearly establishes that an extension respecting the required setback may be built attached to the existing structure, without the need to form an independent volume.',
+      'pm1-h-solucion': 'The solution', 'pm1-solucion': 'The COAG was asked to lodge an appeal before the Xunta Consultiva, which in turn requested clarification from AXI on the applicable criterion. The ruling issued confirmed the correct interpretation of the regulation.',
+      'pm1-link-text': 'View official ruling (Xunta Consultiva) →', 'link-aviso': 'Legal notice', 'link-privacidad': 'Privacy policy', 'modal-aviso-title': 'Legal Notice', 'modal-privacidad-title': 'Privacy Policy', 'modal-aviso-body': '<p><strong>Owner:</strong> Mónica Boente Porto, architect.</p><p><strong>Address:</strong> Ponteareas, Galicia, Spain.</p><p><strong>Email:</strong> boente.porto.monica@gmail.com</p><p>Access to and use of this website implies acceptance of these terms. The content —texts, images, renders and drawings— is the property of MBP Arquitectura and is protected by applicable intellectual property law.</p><p>MBP Arquitectura accepts no liability for damages arising from improper use of the website.</p>', 'modal-privacidad-body': '<p>In accordance with the GDPR, personal data provided through the contact form will be processed by MBP Arquitectura solely for the purpose of responding to your enquiry. Data will not be shared with third parties.</p><p>You may exercise your rights by writing to boente.porto.monica@gmail.com. This site does not use third-party cookies or tracking systems.</p>',
+      'p2-tag': 'Other · 2024', 'p2-title': 'Introduction of residential use in a community building', 'p2-desc': 'Determining the classification as a community building. Resolved through formal objection.', 'p2-link': 'View full case →',
+      'p3-tag': 'Complex case · New build · 2021', 'p3-title': 'Single-family dwelling with hydraulic constraints', 'p3-desc': 'Plot affected by a stream. Required compliance with flood zone regulations.', 'p3-link': 'View full case →',
+      'p4-tag': 'Renovation · 2025', 'p4-title': 'Renovation and extension of single-family dwelling', 'p4-desc': 'Renovation with careful dialogue with the existing structure.', 'p4-link': 'View full case →',
+      'p5-tag': 'New build · 2025', 'p5-title': 'Construction of single-family dwelling', 'p5-desc': 'New-build house with linear geometry adapted to the topography of the terrain.', 'p5-link': 'View full case →',
+    }
+  };
+
+  let currentLang = 'es';
+
+  function setLang(lang) {
+    window._currentLang = lang;
+    var t = window._texts[lang];
+    if (!t) { alert('ERROR: textos no encontrados para ' + lang); return; }
+    document.querySelectorAll('.lang-btn-nav').forEach(function(b) {
+      b.classList.toggle('active', b.textContent.trim().toLowerCase() === lang);
+    });
+    Object.keys(t).forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.innerHTML = t[id];
+    });
+    var phMap = {
+      'input-nombre': t['input-nombre-ph'],
+      'input-email': t['input-email-ph'],
+      'form-textarea': t['form-textarea-ph']
+    };
+    Object.keys(phMap).forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && phMap[id]) el.placeholder = phMap[id];
+    });
+  }
+
+  // Filtros
+  function filtrar(btn, filter) {
+    document.querySelectorAll('.filter-tab').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.proyecto-card').forEach(function(card) {
+      var cats = (card.getAttribute('data-cat') || '').split(' ');
+      var isPlaceholder = !!card.querySelector('.proyecto-placeholder');
+      if (filter === 'todos') {
+        card.style.display = '';
+      } else if (isPlaceholder) {
+        card.style.display = 'none';
+      } else if (cats.indexOf(filter) !== -1) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="logo-img" href="#hero">
+      <img 
+        src="logovector.svg"
+        alt="MBP Arquitectura"
+        class="logo-image"
+        loading="lazy"
+        decoding="async"
+        width="108"
+        height="55">
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#estudio" id="nav-estudio">Estudio</a></li>
+      <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
+      <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn-nav active" onclick="setLang('es')">ES</button>
+      <button class="lang-btn-nav" onclick="setLang('gl')">GL</button>
+      <button class="lang-btn-nav" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-logo-large">
+      <img src="logovector.svg" alt="MBP Arquitectura"></div>
+    <p class="hero-question" id="hero-question">Si tienes un proyecto que requiere una solución <em>singular</em>, este es tu sitio.</p>
+    <p class="hero-subtitle" id="hero-subtitle">Estudio de arquitectura especializado en proyectos y situaciones urbanísticas complejas. Desarrollo de soluciones técnicas a medida y experiencia en tramitaciones administrativas con elevada carga de normativa técnica. Consultoría arquitectónica.</p>
+    <p class="hero-cta-text" id="hero-cta-text">¿Tu proyecto tiene un problema técnico, urbanístico o normativo sin solución aparente? Lo analizo y propongo opciones.</p>
+    <div class="hero-ctas"><a href="#proyectos" class="hero-cta" id="hero-cta">Ver proyectos</a><a href="#contacto" class="hero-cta hero-cta-secondary" id="hero-cta2">Cuéntame tu proyecto →</a></div>
+    <p class="hero-location"><svg viewBox="0 0 30.363199 37.263143" xmlns="http://www.w3.org/2000/svg" class="hero-location-icon">
+  
+  
+  <defs
+     id="defs4">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:currentColor;stroke-width:0.5"
+         id="path1" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path2" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path3" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path4" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+  </defs>
+  <g
+     id="g4"
+     transform="translate(-103.27321,-1076.981)" />
+  <g
+     id="g31"
+     transform="translate(-103.27321,-1076.981)">
+    <path
+       d="m 117.90006,1114.2305 v -16.685 a 5.428709,5.428709 0 1 1 1.13386,0 v 16.685 a 15.11811,15.11811 0 0 1 6.99213,-8.9914 15.11811,15.11811 0 1 0 -15.11811,0 15.11811,15.11811 0 0 1 6.99212,8.9914 z"
+       style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:0.1;stroke-dasharray:none"
+       id="path31" />
+  </g>
+</svg> Ponteareas, Galicia — proyectos en Pontevedra y Ourense</p>
+  </div>
+<!-- CARRUSEL HERO -->
+<div class="hero-carousel" onclick="return false;">
+  <div class="hero-carousel-track">
+    <img src="PROYECTO3/RENDER.png" alt="" draggable="false"/><img src="PROYECTO1/SITUACION.png" alt="" draggable="false"/><img src="PROYECTO5/IMAGEN.png" alt="" draggable="false"/><img src="PROYECTO4/interior.png" alt="" draggable="false"/><img src="PROYECTO2/PLANTAS.png" alt="" draggable="false"/><img src="PROYECTO1/IMAGEN.png" alt="" draggable="false"/><img src="PROYECTO5/INTERIOR.png" alt="" draggable="false"/><img src="PROYECTO3/SECCION.png" alt="" draggable="false"/><img src="PROYECTO4/IMAGEN2.png" alt="" draggable="false"/>
+    <img src="PROYECTO3/RENDER.png" alt="" draggable="false"/><img src="PROYECTO1/SITUACION.png" alt="" draggable="false"/><img src="PROYECTO5/IMAGEN.png" alt="" draggable="false"/><img src="PROYECTO4/interior.png" alt="" draggable="false"/><img src="PROYECTO2/PLANTAS.png" alt="" draggable="false"/><img src="PROYECTO1/IMAGEN.png" alt="" draggable="false"/><img src="PROYECTO5/INTERIOR.png" alt="" draggable="false"/><img src="PROYECTO3/SECCION.png" alt="" draggable="false"/><img src="PROYECTO4/IMAGEN2.png" alt="" draggable="false"/>
+  </div>
+</div>
+</section>
+
+<!-- ESTUDIO -->
+<section id="estudio">
+  <div class="estudio-text">
+    <p class="section-label" id="label-estudio">Estudio</p>
+    <h2 class="section-title" id="title-estudio">Arquitectura que analiza,<br/>diseña y <em>resuelve</em></h2>
+    <div class="divider"></div>
+    <p id="estudio-p1">Como arquitecta, tengo la convicción de que el diseño de los espacios debe cumplir los requisitos de cada cliente y, al mismo tiempo, resolver circunstancias técnicas, urbanísticas y con normativas que condicionan cada proyecto.</p>
+    <p id="estudio-p2">Trabajo desde Galicia con una mirada técnica, rigurosa y orientada a resultados. Cada encargo es un problema que merece una solución a medida.</p>
+    <div class="nicho-grid">
+      <div class="nicho-item">
+        <span class="nicho-icon">◈</span>
+        <h4 id="n1-title">Expedientes complejos</h4>
+        <p id="n1-text">Resolución de situaciones urbanísticas difíciles, fuera de ordenación y procedimientos con alta carga normativa.</p>
+      </div>
+      <div class="nicho-item">
+        <span class="nicho-icon">◈</span>
+        <h4 id="n2-title">Arquitectura y sus leyes</h4>
+        <p id="n2-text">La normativa lejos de ser un límite, preserva principios arquitectónicos y territoriales. Interpreto ese marco y planteo proyectos atractivos, viables y respetuosos con su entorno.</p>
+      </div>
+      <div class="nicho-item">
+        <span class="nicho-icon">◈</span>
+        <h4 id="n3-title">Soluciones a medida</h4>
+        <p id="n3-text">Cada proyecto parte de un análisis individual que deriva en una solución específica, no estandarizada.</p>
+      </div>
+      <div class="nicho-item">
+        <span class="nicho-icon">◈</span>
+        <h4 id="n4-title">Consultoría</h4>
+        <p id="n4-text">Asesoramiento arquitectónico para promotores, particulares y despachos que necesitan soluciones técnicas especializadas.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="proyectos-header">
+    <div>
+      <p class="section-label" id="label-proyectos">Proyectos</p>
+      <h2 class="section-title" id="title-proyectos">Obra<br/><em>seleccionada</em></h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-tab expediente" id="tab-expediente" onclick="filtrar(this,'expediente')">Expediente complejo</button>
+      <button class="filter-tab active" id="tab-todos" onclick="filtrar(this,'todos')">Todos</button>
+      <button class="filter-tab" id="tab-obra-nueva" onclick="filtrar(this,'obra-nueva')">Obra nueva</button>
+      <button class="filter-tab" id="tab-rehabilitacion" onclick="filtrar(this,'rehabilitacion')">Rehabilitación</button>
+      <button class="filter-tab" id="tab-otros" onclick="filtrar(this,'otros')">Otros</button>
+    </div>
+  </div>
+
+  <div class="proyectos-grid">
+    <!-- PROYECTO 1 — Real -->
+    <div class="proyecto-card" data-cat="expediente rehabilitacion" onclick="openProject('p1')">
+      <img 
+        src="PROYECTO1/SITUACION.png"
+        alt="Plano de situación" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="4060"
+        height="3230">
+      <div class="proyecto-overlay">
+        <div class="proyecto-info">
+          <span class="proyecto-tag" id="p1-tag">Expediente complejo · Rehabilitación · 2024</span>
+          <h3 id="p1-title">Rehabilitación y ampliación de vivienda tradicional</h3>
+          <p class="proyecto-desc" id="p1-desc">Ampliación en área de afección de carretera provincial. Resolución mediante recurso a la Xunta Consultiva.</p>
+          <a class="proyecto-link" id="p1-link" onclick="event.stopPropagation();openModal('p1')">Ver ficha completa →</a>
+        </div>
+      </div>
+    </div>
+    <!-- PROYECTO 2 — Real -->
+    <div class="proyecto-card" data-cat="otros expediente" onclick="openProject('p2')">
+      <img 
+        src="PROYECTO2/PLANTAS.png"
+        alt="Plano de plantas" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="500"
+        height="1000">
+      <div class="proyecto-overlay">
+        <div class="proyecto-info">
+          <span class="proyecto-tag" id="p2-tag">Expediente complejo · Otros · 2024</span>
+          <h3 id="p2-title">Implantación de uso residencial en edificio comunitario</h3>
+          <p class="proyecto-desc" id="p2-desc">Determinar clasificación como edificio comunitario. Resolución mediante alegación.</p>
+          <a class="proyecto-link" id="p2-link" onclick="event.stopPropagation();openModal('p2')">Ver ficha completa →</a>
+        </div>
+      </div>
+    </div>
+    <!-- PROYECTO 3 — Real -->
+    <div class="proyecto-card" data-cat="expediente obra-nueva" onclick="openProject('p3')">
+      <img 
+        src="PROYECTO3/SECCION.png"
+        alt="Plano de situación" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="4060"
+        height="3230">
+      <div class="proyecto-overlay">
+        <div class="proyecto-info">
+          <span class="proyecto-tag" id="p3-tag">Expediente complejo · Obra nueva · 2021</span>
+          <h3 id="p3-title">Vivienda unifamiliar con condicionantes hidráulicos</h3>
+          <p class="proyecto-desc" id="p3-desc">Parcela afectada por un regato. Necesario cumplir con los requisitos de zona de inundación.</p>
+          <a class="proyecto-link" id="p3-link" onclick="event.stopPropagation();openModal('p3')">Ver ficha completa →</a>
+        </div>
+      </div>
+    </div>
+    <!-- PROYECTO 4 — Real -->
+    <div class="proyecto-card" data-cat="rehabilitacion" onclick="openProject('p4')">
+      <img 
+        src="PROYECTO4/IMAGEN2.png"
+        alt="Render realista" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="1920"
+        height="957">
+      <div class="proyecto-overlay">
+        <div class="proyecto-info">
+          <span class="proyecto-tag" id="p4-tag">Rehabilitación · 2025</span>
+          <h3 id="p4-title">Rehabilitación y ampliación de vivienda unifamiliar</h3>
+          <p class="proyecto-desc" id="p4-desc">Rehabilitación atendiendo al correcto diálogo con lo existente.</p>
+          <a class="proyecto-link" id="p4-link" onclick="event.stopPropagation();openModal('p4')">Ver ficha completa →</a>
+        </div>
+      </div>
+    </div>
+    <!-- PROYECTO 5 — Real -->
+    <div class="proyecto-card" data-cat="obra-nueva" onclick="openProject('p5')">
+      <img 
+        src="PROYECTO5/IMAGEN.png"
+        alt="Render realista" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="1920"
+        height="957">
+      <div class="proyecto-overlay">
+        <div class="proyecto-info">
+          <span class="proyecto-tag" id="p5-tag">Obra nueva · 2025</span>
+          <h3 id="p5-title">Vivienda de nueva planta lineal adaptada al terreno</h3>
+          <p class="proyecto-desc" id="p5-desc">Vivienda de nueva planta con geometría lineal adaptada a la topografía del terreno.</p>
+          <a class="proyecto-link" id="p5-link" onclick="event.stopPropagation();openModal('p5')">Ver ficha completa →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placeholders (ocultos) -->
+<div class="proyecto-overlay"><div class="proyecto-info"><h3>Proyecto en curso</h3><span>—</span></div></div>
+    </div>
+<div class="proyecto-overlay"><div class="proyecto-info"><h3>Proyecto en curso</h3><span>—</span></div></div>
+    </div>
+<div class="proyecto-overlay"><div class="proyecto-info"><h3>Proyecto en curso</h3><span>—</span></div></div>
+    </div>
+<div class="proyecto-overlay"><div class="proyecto-info"><h3>Proyecto en curso</h3><span>—</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <p class="section-label" id="label-contacto">Contacto</p>
+  <h2 class="section-title" id="title-contacto">Hablemos de<br/><em>tu proyecto</em></h2>
+  <p class="contacto-nota" id="contacto-nota">Cada proyecto recibe un presupuesto personalizado tras una primera consulta sin compromiso.</p>
+  <div class="contacto-layout">
+    <div class="contacto-info">
+      <div class="contacto-item">
+        <h4 id="ct-email-label">Correo</h4>
+        <a href="mailto:boente.porto.monica@gmail.com">boente.porto.monica@gmail.com</a>
+      </div>
+      <div class="contacto-item">
+        <h4 id="ct-tel-label">Teléfono</h4>
+        <a href="tel:+34609314219">+34 609 314 219</a>
+      </div>
+      <div class="contacto-item">
+        <h4 id="ct-loc-label">Ubicación</h4>
+        <p>Ponteareas, Galicia, España</p>
+      </div>
+    </div>
+    <div class="contacto-form">
+      <div class="form-group">
+        <label id="form-nombre">Nombre</label>
+        <input type="text" id="input-nombre" name="nombre" placeholder="Tu nombre"/>
+      </div>
+      <div class="form-group">
+        <label id="form-email">Correo electrónico</label>
+        <input type="email" id="input-email" name="email" placeholder="tu@correo.com"/>
+      </div>
+      <div class="form-group">
+        <label id="form-mensaje">Mensaje</label>
+        <textarea id="form-textarea" name="mensaje" placeholder="Cuéntame tu proyecto..."></textarea>
+      </div>
+      <button class="btn-submit" id="form-btn" onclick="enviarFormulario(event)">Enviar mensaje</button>
+      <p id="form-status" style="display:none; font-size:13px; letter-spacing:0.05em; margin-top:-10px;"></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img
+      src="logovector.svg"
+      alt="MBP Arquitectura"
+      class="footer-logo-img"
+      loading="lazy"
+      decoding="async"
+      width="108"
+      height="55">
+  </div>
+  <div class="footer-legal">
+    <a href="https://www.coag.es/ventanillaunica/servizoatencionocidadan/datos_colexiado.aspx?id=5117&h=E127" target="_blank" id="link-coag">Colegiada COAG</a>
+    <a href="#" onclick="openModal('aviso');return false;" id="link-aviso">Aviso legal</a>
+    <a href="#" onclick="openModal('privacidad');return false;" id="link-privacidad">Política de privacidad</a>
+  </div>
+  <div class="footer-copy" id="footer-copy">© 2025 MBP Arquitectura. Todos los derechos reservados.</div>
+</footer>
+
+<!-- MODAL AVISO LEGAL -->
+<div class="modal-overlay" id="modal-aviso">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('aviso')">×</button>
+    <h2 id="modal-aviso-title">Aviso Legal</h2>
+    <div id="modal-aviso-body"><p><strong>Titular:</strong> Mónica Boente Porto, arquitecta.</p>
+    <p><strong>Domicilio:</strong> Ponteareas, Galicia, España.</p>
+    <p><strong>Correo:</strong> <a href="mailto:boente.porto.monica@gmail.com">boente.porto.monica@gmail.com</a></p>
+    <p>El acceso y uso de este sitio web implica la aceptación de las presentes condiciones. El contenido —textos, imágenes, renders y planos— es propiedad de MBP Arquitectura y está protegido por la legislación de propiedad intelectual vigente.</p>
+    <p>MBP Arquitectura no se responsabiliza de los daños derivados del uso incorrecto del sitio web.</p></div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-privacidad">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('privacidad')">×</button>
+    <h2 id="modal-privacidad-title">Política de Privacidad</h2>
+    <div id="modal-privacidad-body"><p>De acuerdo con el RGPD, los datos personales facilitados a través del formulario de contacto serán tratados por MBP Arquitectura con la finalidad de atender tu consulta. No serán cedidos a terceros.</p>
+    <p>Puedes ejercer tus derechos escribiendo a <a href="mailto:boente.porto.monica@gmail.com">boente.porto.monica@gmail.com</a>. Este sitio no utiliza cookies de terceros ni sistemas de seguimiento.</p></div>
+  </div>
+</div>
+
+<!-- MODAL PROYECTO 1 -->
+<div class="modal-overlay" id="modal-p1">
+  <div class="modal project-modal">
+    <button class="modal-close" onclick="closeModal('p1')" style="z-index:10; background:rgba(250,250,248,0.9); border-radius:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">×</button>
+    <img 
+        src="PROYECTO1/SITUACION.png"
+        alt="Plano de situación" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="2000">
+    <div class="project-modal-body">
+      <span class="project-modal-tag" id="pm1-tag">Expediente complejo · Rehabilitación </span>
+      <h2 class="project-modal-title" id="pm1-title">Rehabilitación y ampliación<br/>de vivienda tradicional</h2>
+
+      <div class="project-ficha">
+        <div class="ficha-item">
+          <div class="ficha-label" id="fl-encargo">Encargo</div>
+          <div class="ficha-value" id="fv-encargo">Rehabilitación y ampliación de vivienda tradicional</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="fl-ubicacion">Ubicación</div>
+          <div class="ficha-value" id="fv-ubicacion">comarca Condado, Pontevedra, Galicia</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="fl-resultado">Resultado</div>
+          <div class="ficha-value" id="fv-resultado">Licencia concedida</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="fl-tipo">Tipo</div>
+          <div class="ficha-value" id="fv-tipo">Expediente complejo · Rehabilitación</div>
+        </div>
+      </div>
+
+      <div class="project-modal-section">
+        <h4 id="pm1-h-problema">El problema</h4>
+        <p id="pm1-problema">La vivienda se encontraba frente a una carretera de la Deputación de Pontevedra. La Deputación sostenía que la ampliación debía ejecutarse en un volumen independiente, al estar la edificación dentro del área de afección de la línea límite de edificación.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="pm1-h-analisis">El análisis</h4>
+        <p id="pm1-analisis">Este criterio contradecía la legislación vigente, que establece de forma clara que una ampliación que respeta el retranqueo puede ejecutarse adosada a la edificación existente, sin necesidad de constituir un volumen independiente.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="pm1-h-solucion">La solución</h4>
+        <p id="pm1-solucion">Se solicitó al COAG la interposición de un recurso ante la Xunta Consultiva, que a su vez requirió a AXI (Augas de Galicia e Infraestruturas de Galicia) una aclaración sobre el criterio aplicable. La resolución emitida avaló la interpretación correcta de la normativa.</p>
+      </div>
+      <a href="https://territorioeurbanismo.xunta.gal/sites/default/files/2024-12/7-Inf-Web_XCP-24-054-COAG-Cast.pdf" target="_blank" class="project-modal-link" id="pm1-link-text">
+        Ver resolución oficial (Xunta Consultiva) →    
+      </a>
+    </div>
+    <img 
+        src="PROYECTO1/IMAGEN.png"
+        alt="3D" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="2000">
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PROYECTO 2 -->
+<div class="modal-overlay" id="modal-p2">
+  <div class="modal project-modal">
+    <button class="modal-close" onclick="closeModal('p2')" style="z-index:10; background:rgba(250,250,248,0.9); border-radius:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">×</button>
+    <img 
+        src="PROYECTO2/PLANTAS.png"
+        alt="Plano de plantas" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="1000">
+    <div class="project-modal-body">
+      <span class="project-modal-tag" id="pm2-tag">Expediente complejo · Rehabilitación</span>
+      <h2 class="project-modal-title" id="pm2-title">Implantación de uso residencial<br/>en local comercial</h2>
+
+      <div class="project-ficha">
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp2-encargo">Encargo</div>
+          <div class="ficha-value" id="fvp2-encargo">Implantación de uso residencial en local comercial</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp2-ubicacion">Ubicación</div>
+          <div class="ficha-value" id="fvp2-ubicacion">comarca Vigo, Pontevedra, Galicia</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp2-resultado">Resultado</div>
+          <div class="ficha-value" id="fvp2-resultado">Licencia concedida</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp2-tipo">Tipo</div>
+          <div class="ficha-value" id="fvp2-tipo">Expediente complejo · Rehabilitación</div>
+        </div>
+      </div>
+
+      <div class="project-modal-section">
+        <h4 id="p2-h-problema">El problema</h4>
+        <p id="p2-problema">La edificación podía estar en una situación de fuera de ordenación al no contar con poca distancia a la vía pública. Además, el edificio cuenta con dos viviendas existentes sin estar claro si esto había sido objeto de licencia. Todo ello condicionaba la viabilidad del cambio de uso.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p2-h-analisis">El análisis</h4>
+        <p id="p2-analisis">Solicitud de acceso al expediente histórico municipal y revisión de actas, licencias y documentación administrativa para verificar la situación urbanística real del edificio.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p2-h-solucion">La solución</h4>
+        <p id="p2-solucion">El estudio urbanístico confirmó que la edificación no se encontraba en situación de fuera de ordenación y la documentación analizada confirmó que las dos viviendas existentes contaban con licencia. Con ello, tras presentar alegación, el Ayuntamiento reconoció el carácter colectivo del edificio, permitiendo la tramitación del cambio de uso a vivienda.</p>
+      </div>
+      <a href="https://www.vigoe.es/vigo/local/el-rural-de-vigo-se-une-a-la-tendencia-de-transformar-locales-en-viviendas-beade-gana-dos-pisos/" target="_blank" class="project-modal-link" id="p2-link-text">
+        Ver noticia en periódifco local →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PROYECTO 3 -->
+<div class="modal-overlay" id="modal-p3">
+  <div class="modal project-modal">
+    <button class="modal-close" onclick="closeModal('p3')" style="z-index:10; background:rgba(250,250,248,0.9); border-radius:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">×</button>
+    <img 
+        src="PROYECTO3/SECCION.png"
+        alt="Plano de planta" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="1000">
+    <div class="project-modal-body">
+      <span class="project-modal-tag" id="pm3-tag">Expediente complejo · Obra nueva</span>
+      <h2 class="project-modal-title" id="pm3-title">Vivienda unifamiliar<br/>con condicionantes hidráulicos</h2>
+
+      <div class="project-ficha">
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp3-encargo">Encargo</div>
+          <div class="ficha-value" id="fvp3-encargo">Construcción de vivienda unifamiliar</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp3-ubicacion">Ubicación</div>
+          <div class="ficha-value" id="fvp3-ubicacion">comarca Terra de Celanova, Ourense, Galicia</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp3-resultado">Resultado</div>
+          <div class="ficha-value" id="fvp3-resultado">Licencia y permiso de hidrográfica concedido.</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp3-tipo">Tipo</div>
+          <div class="ficha-value" id="fvp3-tipo">Expediente complejo · Obra nueva</div>
+        </div>
+      </div>
+
+      <div class="project-modal-section">
+        <h4 id="p3-h-problema">El problema</h4>
+        <p id="p3-problema">Parcela lindante con un regato y cota de la vivienda por debajo del nivel del cauce. Existe un acceso de índole agrícola mediante un paso elevado.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p3-h-analisis">El análisis</h4>
+        <p id="p3-analisis">Se efectúa un estudio hidráulico del cauce y cálculo de la avenida de 500 años para justificar un nuevo paso elevado de mayores dimensiones. La construcción debe ser un espacio seguro según normativa de la Confederación Hidrográfica del Miño-Sil.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p3-h-solucion">La solución</h4>
+        <p id="p3-solucion">Diseño de un nuevo paso elevado que permite el flujo natural del agua y elevación de la vivienda sobre el terreno, siendo toda la casa una zona segura frente a posibles situaciones de crecida o rescate.</p>
+      </div>
+    </div>
+    <img 
+      src="PROYECTO3/RENDER.png"
+      alt="3D" 
+      class="project-modal-img"
+      loading="lazy"
+      decoding="async"
+      width="2000"
+      height="2000">
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PROYECTO 4 -->
+<div class="modal-overlay" id="modal-p4">
+  <div class="modal project-modal">
+    <button class="modal-close" onclick="closeModal('p4')" style="z-index:10; background:rgba(250,250,248,0.9); border-radius:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">×</button>
+    <img 
+        src="PROYECTO4/IMAGEN2.png"
+        alt="Render" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="2000">
+    <div class="project-modal-body">
+      <span class="project-modal-tag" id="pm4-tag">Rehabilitación</span>
+      <h2 class="project-modal-title" id="pm4-title">Rehabilitación de<br/>vivienda unifamiliar</h2>
+
+      <div class="project-ficha">
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp4-encargo">Encargo</div>
+          <div class="ficha-value" id="fvp4-encargo">Rehabilitación de vivienda unifamiliar</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp4-ubicacion">Ubicación</div>
+          <div class="ficha-value" id="fvp4-ubicacion">comarca Condado, Ourense, Galicia</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp4-resultado">Resultado</div>
+          <div class="ficha-value" id="fvp4-resultado">Licencia en trámite.</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp4-tipo">Tipo</div>
+          <div class="ficha-value" id="fvp4-tipo">Rehabilitación</div>
+        </div>
+      </div>
+
+      <div class="project-modal-section">
+        <h4 id="p4-h-analisis">El análisis</h4>
+        <p id="p4-analisis">Es necesario integrar nuevos volúmenes respetando la morfología original de la vivienda y sus anexos. Todos los volúmenes con una antiguedad superior a 86 años.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p4-h-solucion">La solución</h4>
+        <p id="p4-solucion">Las antiguas escaleras exteriores se incorporan al interior, mejorando su fincionalidad y continuidad espacial. Se dialoga de forma equilibrada entre lo existente y lo añadido, manteniendo la relación entre las cotas interiores y exteriores.</p>
+      </div>
+    </div>
+    <img 
+      src="PROYECTO4/interior.png"
+      alt="3D" 
+      class="project-modal-img"
+      loading="lazy"
+      decoding="async"
+      width="2000"
+      height="2000">
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PROYECTO 5 -->
+<div class="modal-overlay" id="modal-p5">
+  <div class="modal project-modal">
+    <button class="modal-close" onclick="closeModal('p5')" style="z-index:10; background:rgba(250,250,248,0.9); border-radius:0; width:40px; height:40px; display:flex; align-items:center; justify-content:center;">×</button>
+    <img 
+        src="PROYECTO5/IMAGEN.png"
+        alt="Render" 
+        class="project-modal-img"
+        loading="lazy"
+        decoding="async"
+        width="2000"
+        height="2000">
+    <div class="project-modal-body">
+      <span class="project-modal-tag" id="pm5-tag">Obra nueva</span>
+      <h2 class="project-modal-title" id="pm5-title">Construcción de Vivienda unifamiliar</h2>
+
+      <div class="project-ficha">
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp5-encargo">Encargo</div>
+          <div class="ficha-value" id="fvp5-encargo">Construcción de vivienda unifamiliar</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp5-ubicacion">Ubicación</div>
+          <div class="ficha-value" id="fvp5-ubicacion">comarca Condado, Pontevedra, Galicia</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp5-resultado">Resultado</div>
+          <div class="ficha-value" id="fvp5-resultado">En construcción.</div>
+        </div>
+        <div class="ficha-item">
+          <div class="ficha-label" id="flp5-tipo">Tipo</div>
+          <div class="ficha-value" id="fvp5-tipo">Obra nueva</div>
+        </div>
+      </div>
+
+      <div class="project-modal-section">
+        <h4 id="p5-h-analisis">El análisis</h4>
+        <p id="p5-analisis">La implantacón se veía condicionada por la geometría del terreno con una clara longitudinalidad y era necesaria una distribución que cumpliera con los requisitos del cliente.</p>
+      </div>
+      <div class="project-modal-section">
+        <h4 id="p5-h-solucion">La solución</h4>
+        <p id="p5-solucion">Se desarrolló un volumen longitudinal adaptado a la parcela. Se organiza visualmente la vivienda en volúmenes claros con cubierta plana, para reforzar la lectura horizontal de la edificación. En el interior se dispuso una doble altura en el salón vinculada visualmente con la escalera que permitía subir, todo ello sin convertir el salón en un pasillo de circulación y si un incremento desdemido de su superficie.</p>
+      </div>
+    </div>
+    <img 
+      src="PROYECTO5/INTERIOR.png"
+      alt="3D" 
+      class="project-modal-img"
+      loading="lazy"
+      decoding="async"
+      width="2000"
+      height="2000">
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Navbar
+
+
+  // Modals
+  function openModal(id) {
+    document.getElementById('modal-' + id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById('modal-' + id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function openProject(id) { openModal(id); }
+
+  document.querySelectorAll('.modal-overlay').forEach(m => {
+    m.addEventListener('click', e => {
+      if (e.target === m) { m.classList.remove('active'); document.body.style.overflow = ''; }
+    });
+  });
+
+
+
+  // Translations
+
+
+  
+
+
+  // Formulario Formspree
+  function enviarFormulario(e) {
+    e.preventDefault();
+    var nombre = document.getElementById('input-nombre').value.trim();
+    var email = document.getElementById('input-email').value.trim();
+    var mensaje = document.getElementById('form-textarea').value.trim();
+    var status = document.getElementById('form-status');
+    var btn = document.getElementById('form-btn');
+
+    if (!nombre || !email || !mensaje) {
+      status.style.display = 'block';
+      status.style.color = 'var(--accent)';
+      status.textContent = 'Por favor rellena todos los campos.';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    fetch('https://formspree.io/f/xkoqozqq', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ nombre: nombre, email: email, mensaje: mensaje })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.ok) {
+        status.style.display = 'block';
+        status.style.color = 'var(--stone)';
+        status.textContent = 'Mensaje enviado. Te responderé en breve.';
+        document.getElementById('input-nombre').value = '';
+        document.getElementById('input-email').value = '';
+        document.getElementById('form-textarea').value = '';
+        btn.textContent = 'Enviado ✓';
+      } else {
+        status.style.display = 'block';
+        status.style.color = 'var(--accent)';
+        status.textContent = 'Hubo un error. Por favor escríbeme directamente.';
+        btn.disabled = false;
+        btn.textContent = 'Enviar mensaje';
+      }
+    })
+    .catch(function() {
+      status.style.display = 'block';
+      status.style.color = 'var(--accent)';
+      status.textContent = 'Error de conexión. Por favor inténtalo de nuevo.';
+      btn.disabled = false;
+      btn.textContent = 'Enviar mensaje';
+    });
+  }
+</script>
+</body>
+</html>
