@@ -595,16 +595,6 @@
     }
   </style>
 <script>
-  function openModal(id) {
-    var el = document.getElementById('modal-' + id);
-    if (el) { el.classList.add('active'); document.body.style.overflow = 'hidden'; }
-  }
-  function closeModal(id) {
-    var el = document.getElementById('modal-' + id);
-    if (el) { el.classList.remove('active'); document.body.style.overflow = ''; }
-  }
-  function openProject(id) { openModal(id); }
-
   window._texts = {
     es: {
       'hero-question': 'Si tienes un proyecto que requiere una solución <em>singular</em>, este es tu sitio.', 'hero-subtitle': 'Estudio de arquitectura especializado en proyectos y situaciones urbanísticas complejas. Desarrollo de soluciones técnicas a medida y experiencia en tramitaciones administrativas con elevada carga de normativa técnica. Consultoría arquitectónica.', 'hero-cta-text': '¿Tu proyecto tiene un problema técnico, urbanístico o normativo sin solución aparente? Lo analizo y propongo opciones.',
@@ -639,41 +629,42 @@
       'pm1-h-problema': 'El problema', 'pm1-problema': 'La vivienda se encontraba frente a una carretera de la Deputación de Pontevedra. La Deputación sostenía que la ampliación debía ejecutarse en un volumen independiente, al estar la edificación dentro del área de afección de la línea límite de edificación.',
       'pm1-h-analisis': 'El análisis', 'pm1-analisis': 'Este criterio contradecía la legislación vigente, que establece de forma clara que una ampliación que respeta el retranqueo puede ejecutarse adosada a la edificación existente tradicional, sin necesidad de constituir un volumen independiente.',
       'pm1-h-solucion': 'La solución', 'pm1-solucion': 'Se solicitó al COAG la interposición de un recurso ante la Xunta Consultiva, que a su vez requirió a AXI (Agencia Gallega de Infraestructuras) un informe sobre el criterio aplicable. La resolución emitida avaló la interpretación correcta de la normativa.',
-      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →', 'pm2-tag': 'Expediente complexo · Rehabilitación',
+      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →',
+      'pm2-tag': 'Expediente complejo · Rehabilitación',
       'pm2-title': 'Implantación de uso residencial<br/>en local comercial',
       'flp2-encargo': 'Encargo', 'fvp2-encargo': 'Implantación de uso residencial en local comercial',
-      'flp2-ubicacion': 'Localización', 'fvp2-ubicacion': 'comarca Vigo, Pontevedra, Galicia',
-      'flp2-resultado': 'Resultado', 'fvp2-resultado': 'Licenza concedida',
-      'flp2-tipo': 'Tipo', 'fvp2-tipo': 'Expediente complexo · Rehabilitación',
-      'p2-h-problema': 'O problema', 'p2-problema': 'A edificación podía estar nunha situación de fóra de ordenación ao non contar con suficiente distancia á vía pública. Ademais, o edificio conta con dúas vivendas existentes sen estar claro se isto fora obxecto de licenza. Todo iso condicionaba a viabilidade do cambio de uso.',
-      'p2-h-analisis': 'A análise', 'p2-analisis': 'Solicitude de acceso ao expediente histórico municipal e revisión de actas, licenzas e documentación administrativa para verificar a situación urbanística real do edificio.',
-      'p2-h-solucion': 'A solución', 'p2-solucion': 'O estudo urbanístico confirmou que a edificación non se atopaba en situación de fóra de ordenación e a documentación analizada confirmou que as dúas vivendas existentes contaban con licenza. Con iso, tras presentar alegación, o Concello recoñeceu o carácter colectivo do edificio, permitindo a tramitación do cambio de uso a vivenda.',
-      'p2-link-text': 'Ver noticia en xornal local →',
-      'pm3-tag': 'Expediente complexo · Obra nova',
-      'pm3-title': 'Vivenda unifamiliar<br/>con condicionantes hidráulicos',
-      'flp3-encargo': 'Encargo', 'fvp3-encargo': 'Construción de vivenda unifamiliar',
-      'flp3-ubicacion': 'Localización', 'fvp3-ubicacion': 'comarca Terra de Celanova, Ourense, Galicia',
-      'flp3-resultado': 'Resultado', 'fvp3-resultado': 'Licenza e permiso de hidrográfica concedido.',
-      'flp3-tipo': 'Tipo', 'fvp3-tipo': 'Expediente complexo · Obra nova',
-      'p3-h-problema': 'O problema', 'p3-problema': 'Parcela lindante cun regato e cota da vivenda por baixo do nivel do leito. Existe un acceso de índole agrícola mediante un paso elevado.',
-      'p3-h-analisis': 'A análise', 'p3-analisis': 'Efectúase un estudo hidráulico do leito e cálculo da avenida de 500 anos para xustificar un novo paso elevado de maiores dimensións. A construción debe ser un espazo seguro segundo normativa da Confederación Hidrográfica do Miño-Sil.',
-      'p3-h-solucion': 'A solución', 'p3-solucion': 'Deseño dun novo paso elevado que permite o fluxo natural da auga e elevación da vivenda sobre o terreo, sendo toda a casa unha zona segura fronte a posibles situacións de crecida ou rescate.',
+      'flp2-ubicacion': 'Ubicación', 'fvp2-ubicacion': 'comarca Vigo, Pontevedra, Galicia',
+      'flp2-resultado': 'Resultado', 'fvp2-resultado': 'Licencia concedida',
+      'flp2-tipo': 'Tipo', 'fvp2-tipo': 'Expediente complejo · Rehabilitación',
+      'p2-h-problema': 'El problema', 'p2-problema': 'La edificación podía estar en una situación de fuera de ordenación al no contar con suficiente distancia a la vía pública. Además, el edificio cuenta con dos viviendas existentes sin estar claro si esto había sido objeto de licencia. Todo ello condicionaba la viabilidad del cambio de uso.',
+      'p2-h-analisis': 'El análisis', 'p2-analisis': 'Solicitud de acceso al expediente histórico municipal y revisión de actas, licencias y documentación administrativa para verificar la situación urbanística real del edificio.',
+      'p2-h-solucion': 'La solución', 'p2-solucion': 'El estudio urbanístico confirmó que la edificación no se encontraba en situación de fuera de ordenación y la documentación analizada confirmó que las dos viviendas existentes contaban con licencia. Con ello, tras presentar alegación, el Ayuntamiento reconoció el carácter colectivo del edificio, permitiendo la tramitación del cambio de uso a vivienda.',
+      'p2-link-text': 'Ver noticia en periódico local →',
+      'pm3-tag': 'Expediente complejo · Obra nueva',
+      'pm3-title': 'Vivienda unifamiliar<br/>con condicionantes hidráulicos',
+      'flp3-encargo': 'Encargo', 'fvp3-encargo': 'Construcción de vivienda unifamiliar',
+      'flp3-ubicacion': 'Ubicación', 'fvp3-ubicacion': 'comarca Terra de Celanova, Ourense, Galicia',
+      'flp3-resultado': 'Resultado', 'fvp3-resultado': 'Licencia y permiso de hidrográfica concedido.',
+      'flp3-tipo': 'Tipo', 'fvp3-tipo': 'Expediente complejo · Obra nueva',
+      'p3-h-problema': 'El problema', 'p3-problema': 'Parcela lindante con un regato y cota de la vivienda por debajo del nivel del cauce. Existe un acceso de índole agrícola mediante un paso elevado.',
+      'p3-h-analisis': 'El análisis', 'p3-analisis': 'Se efectúa un estudio hidráulico del cauce y cálculo de la avenida de 500 años para justificar un nuevo paso elevado de mayores dimensiones. La construcción debe ser un espacio seguro según normativa de la Confederación Hidrográfica del Miño-Sil.',
+      'p3-h-solucion': 'La solución', 'p3-solucion': 'Diseño de un nuevo paso elevado que permite el flujo natural del agua y elevación de la vivienda sobre el terreno, siendo toda la casa una zona segura frente a posibles situaciones de crecida o rescate.',
       'pm4-tag': 'Rehabilitación',
-      'pm4-title': 'Rehabilitación de<br/>vivenda unifamiliar',
-      'flp4-encargo': 'Encargo', 'fvp4-encargo': 'Rehabilitación de vivenda unifamiliar',
-      'flp4-ubicacion': 'Localización', 'fvp4-ubicacion': 'comarca Condado, Ourense, Galicia',
-      'flp4-resultado': 'Resultado', 'fvp4-resultado': 'Licenza en trámite.',
+      'pm4-title': 'Rehabilitación de<br/>vivienda unifamiliar',
+      'flp4-encargo': 'Encargo', 'fvp4-encargo': 'Rehabilitación de vivienda unifamiliar',
+      'flp4-ubicacion': 'Ubicación', 'fvp4-ubicacion': 'comarca Condado, Ourense, Galicia',
+      'flp4-resultado': 'Resultado', 'fvp4-resultado': 'Licencia en trámite.',
       'flp4-tipo': 'Tipo', 'fvp4-tipo': 'Rehabilitación',
-      'p4-h-analisis': 'A análise', 'p4-analisis': 'É necesario integrar novos volumes respectando a morfoloxía orixinal da vivenda e os seus anexos. Todos os volumes cunha antigüidade superior a 86 anos.',
-      'p4-h-solucion': 'A solución', 'p4-solucion': 'As antigas escaleiras exteriores incorpóranse ao interior, mellorando a súa funcionalidade e continuidade espacial. Dialógase de forma equilibrada entre o existente e o engadido, mantendo a relación entre as cotas interiores e exteriores.',
-      'pm5-tag': 'Obra nova',
-      'pm5-title': 'Construción de vivenda unifamiliar',
-      'flp5-encargo': 'Encargo', 'fvp5-encargo': 'Construción de vivenda unifamiliar',
-      'flp5-ubicacion': 'Localización', 'fvp5-ubicacion': 'comarca Condado, Pontevedra, Galicia',
-      'flp5-resultado': 'Resultado', 'fvp5-resultado': 'En construción.',
-      'flp5-tipo': 'Tipo', 'fvp5-tipo': 'Obra nova',
-      'p5-h-analisis': 'A análise', 'p5-analisis': 'A implantación víase condicionada pola xeometría do terreo cunha clara lonxitudinalidade e era necesaria unha distribución que cumprira cos requisitos do cliente.',
-      'p5-h-solucion': 'A solución', 'p5-solucion': 'Desenvolveuse un volume lonxitudinal adaptado á parcela. Organízase visualmente a vivenda en volumes claros con cuberta plana, para reforzar a lectura horizontal da edificación. No interior dispúxose unha dobre altura no salón vinculada visualmente coa escaleira, sen converter o salón nun corredor de circulación.',
+      'p4-h-analisis': 'El análisis', 'p4-analisis': 'Es necesario integrar nuevos volúmenes respetando la morfología original de la vivienda y sus anexos. Todos los volúmenes con una antigüedad superior a 86 años.',
+      'p4-h-solucion': 'La solución', 'p4-solucion': 'Las antiguas escaleras exteriores se incorporan al interior, mejorando su funcionalidad y continuidad espacial. Se dialoga de forma equilibrada entre lo existente y lo añadido, manteniendo la relación entre las cotas interiores y exteriores.',
+      'pm5-tag': 'Obra nueva',
+      'pm5-title': 'Construcción de vivienda unifamiliar',
+      'flp5-encargo': 'Encargo', 'fvp5-encargo': 'Construcción de vivienda unifamiliar',
+      'flp5-ubicacion': 'Ubicación', 'fvp5-ubicacion': 'comarca Condado, Pontevedra, Galicia',
+      'flp5-resultado': 'Resultado', 'fvp5-resultado': 'En construcción.',
+      'flp5-tipo': 'Tipo', 'fvp5-tipo': 'Obra nueva',
+      'p5-h-analisis': 'El análisis', 'p5-analisis': 'La implantación se veía condicionada por la geometría del terreno con una clara longitudinalidad y era necesaria una distribución que cumpliera con los requisitos del cliente.',
+      'p5-h-solucion': 'La solución', 'p5-solucion': 'Se desarrolló un volumen longitudinal adaptado a la parcela. Se organiza visualmente la vivienda en volúmenes claros con cubierta plana, para reforzar la lectura horizontal de la edificación. En el interior se dispuso una doble altura en el salón vinculada visualmente con la escalera, sin convertir el salón en un pasillo de circulación.',
       'link-aviso': 'Aviso legal', 'link-privacidad': 'Política de privacidad', 'modal-aviso-title': 'Aviso Legal', 'modal-privacidad-title': 'Política de Privacidad',
       'p2-tag': 'Otros · 2024', 'p2-title': 'Implantación de uso residencial en edificio comunitario', 'p2-desc': 'Determinar clasificación como edificio comunitario. Resolución mediante alegación.', 'p2-link': 'Ver ficha completa →',
       'p3-tag': 'Expediente complejo · Obra nueva · 2021', 'p3-title': 'Vivienda unifamiliar con condicionantes hidráulicos', 'p3-desc': 'Parcela afectada por un regato. Necesario cumplir con los requisitos de zona de inundación.', 'p3-link': 'Ver ficha completa →',
@@ -713,8 +704,8 @@
       'pm1-h-problema': 'O problema', 'pm1-problema': 'A vivenda atopábase fronte a unha estrada da Deputación de Pontevedra. A Deputación sostiña que a ampliación debía executarse nun volume independente, ao estar a edificación dentro da área de afección da liña límite de edificación.',
       'pm1-h-analisis': 'A análise', 'pm1-analisis': 'Este criterio contradecía a lexislación vixente, que establece de forma clara que unha ampliación que respecta o retranqueo pode executarse adosada á edificación existente, sen necesidade de constituír un volume independente.',
       'pm1-h-solucion': 'A solución', 'pm1-solucion': 'Solicitouse ao COAG a interposición dun recurso ante a Xunta Consultiva, que á súa vez requiriu a AXI unha aclaración sobre o criterio aplicable. A resolución emitida avalou a interpretación correcta da normativa.',
-      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →', 'pm2-tag': 'Expediente complexo · Rehabilitación',
-      'pm2-title': 'Implantación de uso residencial<br/>en local comercial',
+      'pm1-link-text': 'Ver resolución oficial (Xunta Consultiva) →',
+      'pm2-tag': 'Expediente complexo · Rehabilitación', 'pm2-title': 'Implantación de uso residencial<br/>en local comercial',
       'flp2-encargo': 'Encargo', 'fvp2-encargo': 'Implantación de uso residencial en local comercial',
       'flp2-ubicacion': 'Localización', 'fvp2-ubicacion': 'comarca Vigo, Pontevedra, Galicia',
       'flp2-resultado': 'Resultado', 'fvp2-resultado': 'Licenza concedida',
@@ -723,8 +714,7 @@
       'p2-h-analisis': 'A análise', 'p2-analisis': 'Solicitude de acceso ao expediente histórico municipal e revisión de actas, licenzas e documentación administrativa para verificar a situación urbanística real do edificio.',
       'p2-h-solucion': 'A solución', 'p2-solucion': 'O estudo urbanístico confirmou que a edificación non se atopaba en situación de fóra de ordenación e a documentación analizada confirmou que as dúas vivendas existentes contaban con licenza. Con iso, tras presentar alegación, o Concello recoñeceu o carácter colectivo do edificio, permitindo a tramitación do cambio de uso a vivenda.',
       'p2-link-text': 'Ver noticia en xornal local →',
-      'pm3-tag': 'Expediente complexo · Obra nova',
-      'pm3-title': 'Vivenda unifamiliar<br/>con condicionantes hidráulicos',
+      'pm3-tag': 'Expediente complexo · Obra nova', 'pm3-title': 'Vivenda unifamiliar<br/>con condicionantes hidráulicos',
       'flp3-encargo': 'Encargo', 'fvp3-encargo': 'Construción de vivenda unifamiliar',
       'flp3-ubicacion': 'Localización', 'fvp3-ubicacion': 'comarca Terra de Celanova, Ourense, Galicia',
       'flp3-resultado': 'Resultado', 'fvp3-resultado': 'Licenza e permiso de hidrográfica concedido.',
@@ -732,16 +722,14 @@
       'p3-h-problema': 'O problema', 'p3-problema': 'Parcela lindante cun regato e cota da vivenda por baixo do nivel do leito. Existe un acceso de índole agrícola mediante un paso elevado.',
       'p3-h-analisis': 'A análise', 'p3-analisis': 'Efectúase un estudo hidráulico do leito e cálculo da avenida de 500 anos para xustificar un novo paso elevado de maiores dimensións. A construción debe ser un espazo seguro segundo normativa da Confederación Hidrográfica do Miño-Sil.',
       'p3-h-solucion': 'A solución', 'p3-solucion': 'Deseño dun novo paso elevado que permite o fluxo natural da auga e elevación da vivenda sobre o terreo, sendo toda a casa unha zona segura fronte a posibles situacións de crecida ou rescate.',
-      'pm4-tag': 'Rehabilitación',
-      'pm4-title': 'Rehabilitación de<br/>vivenda unifamiliar',
+      'pm4-tag': 'Rehabilitación', 'pm4-title': 'Rehabilitación de<br/>vivenda unifamiliar',
       'flp4-encargo': 'Encargo', 'fvp4-encargo': 'Rehabilitación de vivenda unifamiliar',
       'flp4-ubicacion': 'Localización', 'fvp4-ubicacion': 'comarca Condado, Ourense, Galicia',
       'flp4-resultado': 'Resultado', 'fvp4-resultado': 'Licenza en trámite.',
       'flp4-tipo': 'Tipo', 'fvp4-tipo': 'Rehabilitación',
       'p4-h-analisis': 'A análise', 'p4-analisis': 'É necesario integrar novos volumes respectando a morfoloxía orixinal da vivenda e os seus anexos. Todos os volumes cunha antigüidade superior a 86 anos.',
       'p4-h-solucion': 'A solución', 'p4-solucion': 'As antigas escaleiras exteriores incorpóranse ao interior, mellorando a súa funcionalidade e continuidade espacial. Dialógase de forma equilibrada entre o existente e o engadido, mantendo a relación entre as cotas interiores e exteriores.',
-      'pm5-tag': 'Obra nova',
-      'pm5-title': 'Construción de vivenda unifamiliar',
+      'pm5-tag': 'Obra nova', 'pm5-title': 'Construción de vivenda unifamiliar',
       'flp5-encargo': 'Encargo', 'fvp5-encargo': 'Construción de vivenda unifamiliar',
       'flp5-ubicacion': 'Localización', 'fvp5-ubicacion': 'comarca Condado, Pontevedra, Galicia',
       'flp5-resultado': 'Resultado', 'fvp5-resultado': 'En construción.',
@@ -787,7 +775,38 @@
       'pm1-h-problema': 'The problem', 'pm1-problema': 'The dwelling fronted a road managed by the Deputación de Pontevedra. The authority maintained that any extension had to be built as an independent volume, as the building fell within the setback protection zone of the building limit line.',
       'pm1-h-analisis': 'The analysis', 'pm1-analisis': 'This position contradicted current legislation, which clearly establishes that an extension respecting the required setback may be built attached to the existing structure, without the need to form an independent volume.',
       'pm1-h-solucion': 'The solution', 'pm1-solucion': 'The COAG was asked to lodge an appeal before the Xunta Consultiva, which in turn requested clarification from AXI on the applicable criterion. The ruling issued confirmed the correct interpretation of the regulation.',
-      'pm1-link-text': 'View official ruling (Xunta Consultiva) →', 'link-aviso': 'Legal notice', 'link-privacidad': 'Privacy policy', 'modal-aviso-title': 'Legal Notice', 'modal-privacidad-title': 'Privacy Policy', 'modal-aviso-body': '<p><strong>Owner:</strong> Mónica Boente Porto, architect.</p><p><strong>Address:</strong> Ponteareas, Galicia, Spain.</p><p><strong>Email:</strong> boente.porto.monica@gmail.com</p><p>Access to and use of this website implies acceptance of these terms. The content —texts, images, renders and drawings— is the property of MBP Arquitectura and is protected by applicable intellectual property law.</p><p>MBP Arquitectura accepts no liability for damages arising from improper use of the website.</p>', 'modal-privacidad-body': '<p>In accordance with the GDPR, personal data provided through the contact form will be processed by MBP Arquitectura solely for the purpose of responding to your enquiry. Data will not be shared with third parties.</p><p>You may exercise your rights by writing to boente.porto.monica@gmail.com. This site does not use third-party cookies or tracking systems.</p>',
+      'pm1-link-text': 'View official ruling (Xunta Consultiva) →', 'pm2-tag': 'Complex case · Renovation', 'pm2-title': 'Introduction of residential use<br/>in commercial premises',
+      'flp2-encargo': 'Brief', 'fvp2-encargo': 'Introduction of residential use in commercial premises',
+      'flp2-ubicacion': 'Location', 'fvp2-ubicacion': 'Vigo area, Pontevedra, Galicia',
+      'flp2-resultado': 'Outcome', 'fvp2-resultado': 'Licence granted',
+      'flp2-tipo': 'Type', 'fvp2-tipo': 'Complex case · Renovation',
+      'p2-h-problema': 'The problem', 'p2-problema': 'The building may have been in a non-conforming situation due to insufficient setback from the public road. The building also contains two existing dwellings whose licensing status was unclear. These factors called the viability of the change of use into question.',
+      'p2-h-analisis': 'The analysis', 'p2-analisis': 'A request was submitted to access the municipal planning history and review minutes, licences and administrative records to establish the building\'s actual planning status.',
+      'p2-h-solucion': 'The solution', 'p2-solucion': 'The planning study confirmed the building was not in a non-conforming situation, and the records showed the two existing dwellings had been licensed. Following a formal objection, the council recognised the building\'s collective character and approved the change of use to residential.',
+      'p2-link-text': 'View article in local newspaper →',
+      'pm3-tag': 'Complex case · New build', 'pm3-title': 'Single-family dwelling<br/>with hydraulic constraints',
+      'flp3-encargo': 'Brief', 'fvp3-encargo': 'Construction of single-family dwelling',
+      'flp3-ubicacion': 'Location', 'fvp3-ubicacion': 'Terra de Celanova area, Ourense, Galicia',
+      'flp3-resultado': 'Outcome', 'fvp3-resultado': 'Licence and river authority permit granted.',
+      'flp3-tipo': 'Type', 'fvp3-tipo': 'Complex case · New build',
+      'p3-h-problema': 'The problem', 'p3-problema': 'The plot borders a stream, with the dwelling\'s finished floor level below the channel bed. An existing agricultural access crosses the site via a raised crossing.',
+      'p3-h-analisis': 'The analysis', 'p3-analisis': 'A hydraulic study of the watercourse was carried out, including calculation of the 500-year flood event, to justify a new, larger raised crossing. The structure had to meet the safety requirements set by the Miño-Sil River Authority.',
+      'p3-h-solucion': 'The solution', 'p3-solucion': 'A new raised crossing was designed to allow natural water flow, and the dwelling was elevated above ground level so that the entire house constitutes a safe zone in the event of flooding or emergency.',
+      'pm4-tag': 'Renovation', 'pm4-title': 'Renovation of<br/>single-family dwelling',
+      'flp4-encargo': 'Brief', 'fvp4-encargo': 'Renovation of single-family dwelling',
+      'flp4-ubicacion': 'Location', 'fvp4-ubicacion': 'Condado area, Ourense, Galicia',
+      'flp4-resultado': 'Outcome', 'fvp4-resultado': 'Licence in progress.',
+      'flp4-tipo': 'Type', 'fvp4-tipo': 'Renovation',
+      'p4-h-analisis': 'The analysis', 'p4-analisis': 'New volumes needed to be integrated whilst respecting the original form of the dwelling and its outbuildings, all of which are over 86 years old.',
+      'p4-h-solucion': 'The solution', 'p4-solucion': 'The former external staircase was brought inside, improving functionality and spatial continuity. A careful dialogue was established between existing and new elements, maintaining the relationship between internal and external levels.',
+      'pm5-tag': 'New build', 'pm5-title': 'Construction of single-family dwelling',
+      'flp5-encargo': 'Brief', 'fvp5-encargo': 'Construction of single-family dwelling',
+      'flp5-ubicacion': 'Location', 'fvp5-ubicacion': 'Condado area, Pontevedra, Galicia',
+      'flp5-resultado': 'Outcome', 'fvp5-resultado': 'Under construction.',
+      'flp5-tipo': 'Type', 'fvp5-tipo': 'New build',
+      'p5-h-analisis': 'The analysis', 'p5-analisis': 'The site\'s strongly linear geometry constrained the layout, which also had to meet the client\'s specific requirements.',
+      'p5-h-solucion': 'The solution', 'p5-solucion': 'A longitudinal volume was developed to follow the plot. The house is organised into clearly defined flat-roofed volumes to reinforce the horizontal reading of the building. Inside, a double-height living area is visually connected to the staircase without turning the room into a circulation corridor.',
+      'link-aviso': 'Legal notice', 'link-privacidad': 'Privacy policy', 'modal-aviso-title': 'Legal Notice', 'modal-privacidad-title': 'Privacy Policy', 'modal-aviso-body': '<p><strong>Owner:</strong> Mónica Boente Porto, architect.</p><p><strong>Address:</strong> Ponteareas, Galicia, Spain.</p><p><strong>Email:</strong> boente.porto.monica@gmail.com</p><p>Access to and use of this website implies acceptance of these terms. The content —texts, images, renders and drawings— is the property of MBP Arquitectura and is protected by applicable intellectual property law.</p><p>MBP Arquitectura accepts no liability for damages arising from improper use of the website.</p>', 'modal-privacidad-body': '<p>In accordance with the GDPR, personal data provided through the contact form will be processed by MBP Arquitectura solely for the purpose of responding to your enquiry. Data will not be shared with third parties.</p><p>You may exercise your rights by writing to boente.porto.monica@gmail.com. This site does not use third-party cookies or tracking systems.</p>',
       'p2-tag': 'Other · 2024', 'p2-title': 'Introduction of residential use in a community building', 'p2-desc': 'Determining the classification as a community building. Resolved through formal objection.', 'p2-link': 'View full case →',
       'p3-tag': 'Complex case · New build · 2021', 'p3-title': 'Single-family dwelling with hydraulic constraints', 'p3-desc': 'Plot affected by a stream. Required compliance with flood zone regulations.', 'p3-link': 'View full case →',
       'p4-tag': 'Renovation · 2025', 'p4-title': 'Renovation and extension of single-family dwelling', 'p4-desc': 'Renovation with careful dialogue with the existing structure.', 'p4-link': 'View full case →',
@@ -798,6 +817,7 @@
   let currentLang = 'es';
 
   function setLang(lang) {
+    currentLang = lang;
     window._currentLang = lang;
     var t = window._texts[lang];
     if (!t) { alert('ERROR: textos no encontrados para ' + lang); return; }
@@ -1476,7 +1496,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Navbar
 
 
@@ -1484,6 +1504,7 @@
   function openModal(id) {
     document.getElementById('modal-' + id).classList.add('active');
     document.body.style.overflow = 'hidden';
+    setLang(currentLang);
   }
   function closeModal(id) {
     document.getElementById('modal-' + id).classList.remove('active');
