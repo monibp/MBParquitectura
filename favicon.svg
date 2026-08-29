@@ -1,31 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541.99999 541.99999" width="512" height="512">
-  <rect width="541.99999" height="541.99999" fill="#f5f2ed" rx="81.2999985"/>
-  <g transform="translate(40.0,151.49999000000003)">
-    
-  
-  <desc
-     id="desc1">logovector.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = file</desc>
-  
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-40 -20 490 376"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="favicon.svg"
+   width="490"
+   height="376"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.79"
+     inkscape:cx="270.94972"
+     inkscape:cy="206.98324"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     inkscape:window-x="1272"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     x="-38.885128"
+     y="-19.691933"
+     width="488.41806"
+     height="375.13983"
+     rx="141.09538"
+     fill="#f5f2ed"
+     id="rect1"
+     ry="0"
+     style="opacity:1;stroke-width:1.00655" />
   <g
      id="g4"
      transform="translate(-0.89025236,-718.81335)" />
   <g
      id="g30"
-     transform="translate(-0.89025236,-718.81335)">
+     transform="translate(-28.890252,-702.81335)">
     <g
        id="g2"
        clip-path="url(#clipPath2)">
       <g
-         inkscape:label="Clip"
          id="g1">
         <path
            id="path5"
-           style="fill:#8b2e10;fill-opacity:1;stroke:#992600;stroke-width:0.960237;stroke-dasharray:none"
-           d="M 132.31376,719.80928 1.7024313,957.18233 H 35.977822 l 96.335938,-175.08008 96.33789,175.08008 h 34.27539 z m 199.55664,0 -91.49414,166.27735 17.13868,31.14648 74.35546,-135.13086 96.33594,175.08008 h 34.27539 z"
-           sodipodi:nodetypes="cccccccccccccc" />
+           fill="#8b2e10"
+           d="M 132.31376,719.80928 1.7024313,957.18233 H 35.977822 l 96.335938,-175.08008 96.33789,175.08008 h 34.27539 z m 199.55664,0 -91.49414,166.27735 17.13868,31.14648 74.35546,-135.13086 96.33594,175.08008 h 34.27539 z" />
       </g>
     </g>
-  </g>
-
   </g>
 </svg>
